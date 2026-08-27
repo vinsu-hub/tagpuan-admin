@@ -2,6 +2,7 @@
 
 import { useMemo, useState, type ChangeEvent, type DragEvent, type ReactNode } from "react";
 import { Link, useLocation } from "wouter";
+import { ApplicantsPage, HearMeOutPage, MediaPage, NewsletterPage, ProjectsPage, RecapsPage, SpotlightsPage, WallPage } from "./AdminAdditionalPages";
 import {
   AlignCenter,
   AlignLeft,
@@ -567,14 +568,14 @@ export default function Home() {
   if (location === "/" || location === "/admin" || location === "/admin/") content = <OverviewPage />;
   else if (location === "/admin/events") content = <EventsPage />;
   else if (location === "/admin/events/new") content = <CreateEventPage />;
-  else if (location === "/admin/recaps") content = <PlaceholderPage eyebrow="EVENT RECAPS" title="Keep the moments close." description="Review event photos, notes, and the stories worth carrying forward." />;
-  else if (location === "/admin/wall") content = <PlaceholderPage eyebrow="COMMUNITY" title="What’s on the wall?" description="Keep an eye on the notes, questions, and little sparks shared by the community." />;
-  else if (location === "/admin/projects") content = <PlaceholderPage eyebrow="COMMUNITY" title="Good things are taking shape." description="Review passion projects and help people find collaborators, encouragement, and momentum." />;
-  else if (location === "/admin/applicants") content = <PlaceholderPage eyebrow="COMMUNITY" title="Meet the next neighbors." description="Review applicants and keep the community intake experience thoughtful and clear." />;
-  else if (location === "/admin/spotlights") content = <PlaceholderPage eyebrow="CONTENT" title="People worth spotlighting." description="Shape member stories with care and publish the voices that make Tagpuan feel like home." />;
-  else if (location === "/admin/hear-me-out") content = <PlaceholderPage eyebrow="CONTENT" title="Give the room a mic." description="Review Hear Me Out submissions and keep the community conversation moving." />;
-  else if (location === "/admin/media") content = <PlaceholderPage eyebrow="CONTENT" title="The shared album." description="Keep your media library organized and ready for the next recap or story." />;
-  else content = <PlaceholderPage eyebrow="AUDIENCE" title="Stay in touch." description="Manage the newsletter audience and send the next note when the time is right." />;
+  else if (location === "/admin/recaps") content = <RecapsPage />;
+  else if (location === "/admin/wall") content = <WallPage />;
+  else if (location === "/admin/projects") content = <ProjectsPage />;
+  else if (location === "/admin/applicants") content = <ApplicantsPage />;
+  else if (location === "/admin/spotlights") content = <SpotlightsPage />;
+  else if (location === "/admin/hear-me-out") content = <HearMeOutPage />;
+  else if (location === "/admin/media") content = <MediaPage />;
+  else content = <NewsletterPage />;
 
   return <AdminShell>{content}</AdminShell>;
 }
