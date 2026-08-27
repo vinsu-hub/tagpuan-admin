@@ -39,3 +39,12 @@
 - [x] Keep the same public asset filenames and confirm all UI references remain unchanged.
 - [x] Verify optimized files, type check, and production build.
 - [ ] Save a successful checkpoint and deliver the cloneable local setup.
+
+## Routing Regression Cleanup
+
+- [x] Audit all Wouter routes, sidebar targets, and fallback paths.
+- [x] Reproduce the secondary-tab to Overview 404 transition.
+- [x] Fix the route/fallback behavior without breaking direct deep links.
+- [x] Verify every admin tab returns to Overview correctly on desktop and mobile.
+- [x] Run type check, production build, and final preview checks.
+- [ ] Save a checkpoint and deliver the routing fix.
