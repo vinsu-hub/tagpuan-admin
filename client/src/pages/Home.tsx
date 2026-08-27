@@ -76,11 +76,11 @@ type EventItem = {
 };
 
 const asset = {
-  mark: "/manus-storage/tagpuan-mark_ab941381.png",
-  next: "/manus-storage/tagpuan-next-gathering_95abaa3b.jpg",
-  sunday: "/manus-storage/tagpuan-sunday-sessions_d56d6a50.jpg",
-  creative: "/manus-storage/tagpuan-creative-nights_a09cc658.jpg",
-  weeknight: "/manus-storage/tagpuan-weeknight-hang_ed471b84.jpg",
+  mark: "/assets/tagpuan/mark.png",
+  next: "/assets/tagpuan/next-gathering.jpg",
+  sunday: "/assets/tagpuan/sunday-sessions.jpg",
+  creative: "/assets/tagpuan/creative-nights.jpg",
+  weeknight: "/assets/tagpuan/weeknight-hang.jpg",
 };
 
 const events: EventItem[] = [
