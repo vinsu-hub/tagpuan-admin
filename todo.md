@@ -48,3 +48,13 @@
 - [x] Verify every admin tab returns to Overview correctly on desktop and mobile.
 - [x] Run type check, production build, and final preview checks.
 - [ ] Save a checkpoint and deliver the routing fix.
+
+## Passion Projects Workflow Enhancement
+
+- [x] Audit the existing project card actions, overflow controls, and drawer state.
+- [x] Add a working three-dot menu with Edit and Delete actions.
+- [x] Build the project edit layout with editable title, description, owner, tags, status, and image preview.
+- [x] Make Add project open a create layout with empty editable fields and save/cancel feedback.
+- [x] Add delete confirmation and remove the selected project from the local list.
+- [x] Verify responsive behavior, TypeScript, production build, and key interactions.
+- [ ] Save a checkpoint and deliver the updated Passion Projects workflow.

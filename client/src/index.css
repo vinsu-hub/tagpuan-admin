@@ -328,3 +328,29 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .drawer-project-hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(37, 25, 15, 0) 46%, rgba(37, 25, 15, .18)); }
 .drawer-project-hero .project-state { position: absolute; z-index: 1; left: 14px; bottom: 13px; }
 @media (max-width: 680px) { .drawer-project-hero { height: 160px; } }
+
+/* Passion Projects workflow: contextual actions and editing use the same paper surfaces, orange ink, and quiet destructive treatment as the rest of the admin. */
+.project-menu-wrap { position: relative; display: flex; align-items: center; }
+.project-menu { position: absolute; z-index: 12; right: 0; bottom: calc(100% + 8px); width: 162px; padding: 6px; border: 1px solid #e1d4c2; border-radius: 10px; background: #fffaf1; box-shadow: 0 13px 26px rgba(63, 39, 18, .13); animation: menu-in .16s cubic-bezier(.23,1,.32,1); transform-origin: bottom right; }
+.project-menu button { width: 100%; min-height: 35px; display: flex; align-items: center; gap: 8px; padding: 0 9px; border-radius: 7px; background: transparent; color: #41362b; font-size: 11px; text-align: left; }
+.project-menu button:hover { background: #f4e8d9; color: var(--admin-orange-deep); }
+.project-menu button.danger { color: #a14c3f; }
+.project-menu button.danger:hover { background: #f8e1db; color: #8d392f; }
+.project-editor-form { display: flex; flex-direction: column; gap: 15px; }
+.editor-field { display: flex; flex-direction: column; gap: 7px; color: #40342a; font-size: 11px; font-weight: 800; letter-spacing: .01em; }
+.editor-field input, .editor-field textarea, .editor-select { width: 100%; border: 1px solid #ddcfbe; border-radius: 8px; outline: 0; background: #fffdf8; color: var(--admin-ink); font: inherit; font-weight: 500; letter-spacing: 0; transition: border-color .18s ease, box-shadow .18s ease, background .18s ease; }
+.editor-field input, .editor-select { min-height: 40px; padding: 0 11px; }
+.editor-field textarea { min-height: 104px; resize: vertical; padding: 11px; line-height: 1.5; }
+.editor-field input:focus, .editor-field textarea:focus, .editor-select:focus { border-color: var(--admin-orange); box-shadow: 0 0 0 3px rgba(230,106,28,.1); background: #fffaf2; }
+.editor-field input::placeholder, .editor-field textarea::placeholder { color: #a09182; font-weight: 500; }
+.editor-hint { margin-top: -3px; color: #8d7d6f; font-size: 9px; font-weight: 500; }
+.editor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.editor-select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, #867362 50%), linear-gradient(135deg, #867362 50%, transparent 50%); background-position: calc(100% - 14px) 17px, calc(100% - 10px) 17px; background-repeat: no-repeat; background-size: 4px 4px, 4px 4px; padding-right: 25px; }
+.editor-image-preview { position: relative; overflow: hidden; height: 132px; border-radius: 10px; background: #eadfd1; }
+.editor-image-preview img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.editor-image-preview span { position: absolute; left: 10px; bottom: 10px; padding: 5px 8px; border-radius: 6px; color: #4b3a29; background: rgba(255, 249, 231, .84); font-size: 9px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.delete-dialog { padding: 19px; border: 1px solid #efd6ca; border-radius: 11px; color: #8d3f33; background: #fff4ef; }
+.delete-dialog > svg { margin-bottom: 13px; }
+.delete-dialog p { margin: 0; color: #65463d; font-size: 12px; line-height: 1.5; }
+@keyframes menu-in { from { opacity: 0; transform: translateY(4px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (max-width: 680px) { .project-menu { right: -5px; bottom: calc(100% + 7px); width: 150px; }.editor-grid { grid-template-columns: 1fr; gap: 15px; }.editor-image-preview { height: 116px; } }
