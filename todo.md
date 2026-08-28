@@ -58,3 +58,12 @@
 - [x] Add delete confirmation and remove the selected project from the local list.
 - [x] Verify responsive behavior, TypeScript, production build, and key interactions.
 - [ ] Save a checkpoint and deliver the updated Passion Projects workflow.
+
+## Passion Projects Cover Upload
+
+- [x] Add local image input state and validation to the project editor.
+- [x] Show the selected cover immediately in the editor preview.
+- [x] Preserve the uploaded cover when saving or editing the project in the current session.
+- [x] Style the browse/replace control for desktop and mobile.
+- [x] Verify type check, production build, and cover upload states.
+- [ ] Save a checkpoint and deliver the cover-upload enhancement.
